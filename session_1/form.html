@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h2>Form Example</h2>
+    <form>
+         <!-- text input field-->
+         Name: <input type = "text" placeholder="Enter your name" required maxlength="20" minlength="2" pattern="[a-zA-Z]+"/> <br />
+          <!-- password input field-->
+         Password: <input type = "password" placeholder="Enter your password" required/> <br />
+          <!-- email input field-->
+         Email: <input type = "email" placeholder="Enter your email" required/><br />
+          <!-- number input field-->
+         Phone Number : <input type = "text" placeholder="Enter your phone number" required patter="[6-9][0-9]{9}"/><br />
+         <!-- radio button name should be same for single select-->
+          Gender : <input type="radio" name="gen" value="male" /> Male
+          <input type="radio" name="gen" value="female" /> Female <br />
+        <!-- checkbox for multi select-->
+          Hobbies : <input type="checkbox" name="c1" value="cricket" /> Cricket <br />
+          <input type="checkbox" name="c1" value="badminton" /> Badminton <br />
+          <input type="checkbox" name="c1" value="football" /> Football <br />
+        <!--Select menu-->
+        City: <select>
+                <option>Select</option>
+                <option>Bangalore</option>
+                <option>Delhi</option>
+                <option>Chennai</option>
+        </select> <br />
+         <!--Upload file-->
+        Upload : <input type="file"/> <br />
+        <!--Date field-->
+        Dob : <input type="date" required/> <br />
+        <!--color picker-->
+        Choose: <input type="color" /> <br />
+        <!--URL-->
+        Website : <input type="url" /> <br />
+        <!--text area-->
+        Feedback : <textarea></textarea> <br />
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset" />
+        <input type="button" value="Add" />
+    </form>
+</body>
+</html>
